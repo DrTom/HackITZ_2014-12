@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require 'json_roa/client'
+
+
+root_relation= JSON_ROA::Client.connect \
+  "https://ci2.zhdk.ch/cider-ci/api/v2/" do |conn|
+  conn.basic_auth(ENV['CIDER_CI_USERNAME'],ENV['CIDER_CI_PASSWORD'])
+  conn.ssl.verify= false
+end
+
+
+root_resource= root_relation.get
+
+# Try
+# root_resource.data
+# root_resource.json_roa_data
+# see https://github.com/json-roa/json-roa_ruby-client/blob/master/lib/json_roa/client/resource.rb
+# root_resource.relation("executions")
+# ... see previous demo
+# root_resource.relation("executions").get("repository"=>"madek","branch"=>"master")
+# root_resource.relation("executions").get("repository"=>"madek","branchdescendants"=>"master")
+binding.pry

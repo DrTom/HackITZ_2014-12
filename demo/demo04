@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require 'json_roa/client'
+
+
+root_relation= JSON_ROA::Client.connect \
+  "https://ci2.zhdk.ch/cider-ci/api/v2/" do |conn|
+  conn.basic_auth(ENV['CIDER_CI_USERNAME'],ENV['CIDER_CI_PASSWORD'])
+  conn.ssl.verify= false
+end
+
+
+root_resource= root_relation.get
+madek_master_executions= root_resource.relation("executions") \
+  .get("repository"=>"madek","branchdescendants"=>"master") \
+  .collection()
+
+# Try
+# madek_master_executions.class
+# see https://github.com/json-roa/json-roa_ruby-client/blob/master/lib/json_roa/client/collection.rb
+# madek_master_executions.each do |execution_relation| 
+#   puts execution_relation.get.data
+# end
+# 
+binding.pry

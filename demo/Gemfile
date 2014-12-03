@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem "pry"
+gem 'json_roa-client', "= 1.0.0.pre.beta.0"
+gem 'mime-types', '~> 2.4.3'
+gem 'thread', '= 0.1.4'
+

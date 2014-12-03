@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require 'json_roa/client'
+
+
+root_relation= JSON_ROA::Client.connect \
+  "https://ci2.zhdk.ch/cider-ci/api/v2/" do |conn|
+  conn.basic_auth(ENV['CIDER_CI_USERNAME'],ENV['CIDER_CI_PASSWORD'])
+  conn.ssl.verify= false
+end
+
+# Try
+#
+# root_relation
+# root_relation.data
+# root_relation.methods
+# root_relation.get
+#
+# see https://github.com/json-roa/json-roa_ruby-client/blob/master/lib/json_roa/client/relation.rb
+# see https://github.com/json-roa/json-roa_ruby-client/blob/master/lib/json_roa/client.rb
+
+binding.pry
