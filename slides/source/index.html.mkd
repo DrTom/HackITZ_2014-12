@@ -20,7 +20,7 @@ HackITZ 2014-12
 
 2. Linked Data (Max)
 
-3. HAL, JSON-ROA (Tom)
+3. [HAL, JSON-ROA](part3.html) (Tom)
 
 4. Hands On (Everybody)
 

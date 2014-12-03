@@ -1,0 +1,121 @@
+{::options parse_block_html="true" /}
+
+<div class="jumbotron">
+
+# 3. Hyper API Implementations HAL & JSON-ROA
+
+</div>
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- -----------------> 
+
+# HAL 
+
+<http://stateless.co/hal_specification.html>
+
+## Background
+
+I advocated for HAL ...
+
+...  implemented two APIs for HAL (Madek prototype in Ruby on Rails,
+Cider-CI complete in Clojure), no problems
+
+
+... Programmed against HAL APIs in various languages (Ruby, JS, Clojure),
+well ...
+
+
+
+</div></div>
+
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- -----------------> 
+
+# HAL - The Good
+
+Very well documented: webpage, formal Internet-Draft Specification,
+discussion group
+
+Numerous libraries for backend and clients
+
+Well intended meta links
+
+Killerapp "The HAL Browser" 
+
+</div></div>
+
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- -----------------> 
+
+# HAL - The Bad
+
+Numerous libraries, many if not most of them: 
+
+* half finished 
+* abandoned
+* fairly complex for what they provide
+* don't feel good when you use them  
+
+Epic discussions (curries, etc...) 
+
+</div></div>
+
+
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- -----------------> 
+
+# HAL - The Ugly 
+
+Almost all libraries are broken (i.e. violate  specification)
+
+People get curries intuitively wrong
+
+Implicit behavior (e.g. links and curries)
+
+Meta links are very restricted
+
+'embedded' is in the wrong place
+
+...
+
+HAL is the best there (<del>is</del>) was 
+
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- -----------------> 
+
+# JSON-ROA
+
+<http://json-roa.github.io/>
+
+JSON-ROA - a JSON extension for resource and relation oriented
+architectures providing explorable APIs for humans and machines.
+
+
+</div></div>
+
+<div class="panel panel-default"><div class="panel-body"><!-- -----------------> 
+
+# JSON-ROA State
+
+BETA but fully usable: 
+
+-   Informal [JSON-ROA specification][] complete, needs improvement
+-   [The JSON-ROA Browser][] complete
+-   [Ruby client][] functionally complete, tests would be nice
+-   Clojure Ring Hanlder already in use but not published
+-   Clojure client planned 
+-   Formal specification (would be very hard for me)
+*   ...
+
+
+</div></div>
+
+  [JSON-ROA specification]: http://json-roa.github.io/specification.html
+  [The JSON-ROA Browser]: http://json-roa.github.io/browser/index.html
+  [Ruby client]: https://github.com/json-roa/json-roa_ruby-client
+
