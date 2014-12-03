@@ -1,13 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'fileutils'
-require 'json_roa/client'
-require 'json_roa/client'
-require 'mime/types'
-require 'open-uri'
 require 'pry'
-require 'thread/future'
-require 'thread/pool'
+require 'json_roa/client'
 
 
 root_relation= JSON_ROA::Client.connect \
@@ -17,14 +11,16 @@ root_relation= JSON_ROA::Client.connect \
 end
 
 
-# Suggested exercise 
-#
-# Pick any execution; compute the failed/success statistics for tasks and trails
-# and attach the result in json format to the tree_id
-#
-# some inspiration: 
-#
-# https://github.com/cider-ci/cider-ci_ruby-support/blob/master/bin/cider-ci_coverage
-#
+root_resource= root_relation.get
+madek_master_executions= root_resource.relation("executions") \
+  .get("repository"=>"madek","branchdescendants"=>"master") \
+  .collection()
 
+# Try
+# madek_master_executions.class
+# see https://github.com/json-roa/json-roa_ruby-client/blob/master/lib/json_roa/client/collection.rb
+# madek_master_executions.each do |execution_relation| 
+#   puts execution_relation.get.data
+# end
+# 
 binding.pry
