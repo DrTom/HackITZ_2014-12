@@ -42,7 +42,7 @@
 
 **Safe** methods do not modify resources. 
 
-**Indempotent** methods can be called multiple times with the same effect. 
+**Idempotent** methods can be called multiple times with the same effect. 
 
 
 |GET | ✓ | ✓ |
