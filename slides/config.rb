@@ -50,6 +50,8 @@
 
 # activate :syntax, :line_numbers => false
 
+set :relative_links, true
+
 set :markdown_engine, :kramdown
 
 set :css_dir, 'stylesheets'
@@ -71,7 +73,7 @@ configure :build do
   activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

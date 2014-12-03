@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title></title>
+    <link href="stylesheets/app-4160609c.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/app-2922611f.js" type="text/javascript"></script>
+  </head>
+  <body class='part1'>
+    <div class='container text-center'>
+      
+      <div class="jumbotron">
+      
+        <h1 id="http-rest-hyperapis">1. HTTP, REST, HyperAPIs</h1>
+      
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h1 id="http">HTTP</h1>
+      
+          <blockquote>
+            <p>The Hypertext Transfer Protocol (HTTP) is an application protocol for
+      distributed, collaborative, hypermedia information systems.</p>
+          </blockquote>
+      
+          <blockquote>
+            <p>HTTP is a <strong>stateless protocol</strong></p>
+          </blockquote>
+      
+          <p><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</a></p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <!-- ----------------->
+      
+          <h1 id="rest">REST</h1>
+      
+          <blockquote>
+            <p>Representational state transfer (REST) is <strong>an abstraction of the
+      architecture of the World Wide Web</strong>;</p>
+          </blockquote>
+      
+          <blockquote>
+            <p>more precisely, REST is an architectural style consisting of a
+      coordinated set of <strong>architectural constraints</strong> applied to components,
+      connectors, and data elements, within a <strong>distributed hypermedia system</strong></p>
+          </blockquote>
+      
+          <p><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">https://en.wikipedia.org/wiki/Representational_state_transfer</a></p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <!-- ----------------->
+      
+          <h1 id="http-methods">HTTP Methods</h1>
+      
+          <p><strong>Safe</strong> methods do not modify resources. </p>
+      
+          <p><strong>Indempotent</strong> methods can be called multiple times with the same effect. </p>
+      
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>HEAD</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>OPTIONS</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>✓</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>✓</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>PATCH</td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td> </td>
+                <td> </td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <!-- ----------------->
+      
+          <h1 id="resources-and-urls">Resources and URLs</h1>
+      
+          <ul>
+            <li>a <em>resource</em> is a thing (e.g. user, task, item, …)</li>
+            <li>a RESTful URL should refer to a resource that is a thing </li>
+            <li>the <strong>path segment</strong> hints to the resource </li>
+          </ul>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <!-- ----------------->
+      
+          <h2 id="url-examples">URL Examples</h2>
+      
+          <p>Good</p>
+      
+          <ul class="text-success">
+            <li>/users/max [GET,PUT]</li>
+            <li>/users/?type=admin&amp;page=1 [GET]</li>
+          </ul>
+      
+          <p>Bad</p>
+      
+          <ul class="text-warning">
+            <li>/?item=user&amp;name=max [GET]</li>
+            <li>/user/max&amp;format=json [GET]</li>
+            <li>/media-resources/?with=title [GET]</li>
+            <li>/user/max&amp;action=update [POST]</li>
+          </ul>
+      
+          <p>Dangerous </p>
+      
+          <ul class="text-danger">
+            <li>/user/max&amp;action=delete [GET]</li>
+          </ul>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <!-- ----------------->
+      
+          <h1 id="rest-again">REST Again</h1>
+      
+          <p>REST is an architectural style which uses resources, verbs, requests (with headers and
+      urls) correctly and meaningfully. </p>
+      
+          <h2 id="benefits">Benefits</h2>
+      
+          <ul>
+            <li>caching etc. works  (performance!)</li>
+            <li>conventions relieve you from writing and reading documentation </li>
+            <li>…</li>
+          </ul>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <!-- ----------------->
+      
+          <h1 id="hateoas">HATEOAS</h1>
+      
+          <blockquote>
+            <p>an abbreviation for <strong>Hypermedia as the Engine of Application State</strong>, is
+      a constraint of the REST application architecture … a client
+      interacts with a network application entirely through <strong>hypermedia</strong>
+      provided dynamically by application servers</p>
+          </blockquote>
+      
+          <p><a href="http://en.wikipedia.org/wiki/HATEOAS">http://en.wikipedia.org/wiki/HATEOAS</a></p>
+      
+          <p>more in Part 2 and 3 …</p>
+      
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

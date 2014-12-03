@@ -1,0 +1,134 @@
+{::options parse_block_html="true" /}
+
+<div class="jumbotron">
+
+# 1. HTTP, REST, HyperAPIs
+
+</div>
+
+
+
+<div class="panel panel-default"><div class="panel-body">
+# HTTP
+
+> The Hypertext Transfer Protocol (HTTP) is an application protocol for
+> distributed, collaborative, hypermedia information systems.
+
+> HTTP is a **stateless protocol**
+
+<https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- ----------------->
+
+# REST
+
+> Representational state transfer (REST) is **an abstraction of the
+> architecture of the World Wide Web**;
+
+> more precisely, REST is an architectural style consisting of a
+> coordinated set of **architectural constraints** applied to components,
+> connectors, and data elements, within a **distributed hypermedia system**
+
+<https://en.wikipedia.org/wiki/Representational_state_transfer>
+</div></div>
+
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- ----------------->
+
+# HTTP Methods
+
+**Safe** methods do not modify resources. 
+
+**Indempotent** methods can be called multiple times with the same effect. 
+
+
+|GET | ✓ | ✓ |
+|HEAD| ✓ | ✓ |
+|OPTIONS| ✓ | ✓ |
+|PUT| ✓ |   |
+|DELETE| ✓ |   |
+|PATCH|   |   |
+|POST|   |   |
+{: .table}
+
+</div></div>
+
+
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- ----------------->
+
+# Resources and URLs
+
+* a *resource* is a thing (e.g. user, task, item, ...)
+* a RESTful URL should refer to a resource that is a thing 
+* the **path segment** hints to the resource 
+
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- ----------------->
+
+## URL Examples 
+
+Good
+
+* /users/max [GET,PUT]
+* /users/?type=admin&page=1 [GET]
+{: .text-success}
+
+Bad
+
+* /?item=user&name=max [GET]
+* /user/max&format=json [GET]
+* /media-resources/?with=title [GET]
+* /user/max&action=update [POST]
+{: .text-warning}
+
+Dangerous 
+
+* /user/max&action=delete [GET]
+{: .text-danger}
+
+
+
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- ----------------->
+
+# REST Again
+
+
+REST is an architectural style which uses resources, verbs, requests (with headers and
+urls) correctly and meaningfully. 
+
+## Benefits
+
+* caching etc. works  (performance!)
+* conventions relieve you from writing and reading documentation 
+* ...
+
+</div></div>
+
+
+
+<div class="panel panel-default"><div class="panel-body"><!-- ----------------->
+
+#  HATEOAS
+
+> an abbreviation for **Hypermedia as the Engine of Application State**, is
+> a constraint of the REST application architecture ... a client
+> interacts with a network application entirely through **hypermedia**
+> provided dynamically by application servers
+
+<http://en.wikipedia.org/wiki/HATEOAS>
+
+more in Part 2 and 3 ...
+
+
+
+
