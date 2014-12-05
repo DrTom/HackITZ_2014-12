@@ -106,10 +106,10 @@ BETA but fully usable:
 
 -   Informal [JSON-ROA specification][] complete, needs improvement
 -   [The JSON-ROA Browser][] complete
--   [Ruby client][] functionally complete, tests would be nice
--   Clojure Ring Hanlder already in use but not published
+-   [Ruby client][] complete
+-   [Clojure Ring Handler](https://github.com/cider-ci/cider-ci_api/tree/9696dbd1beb4f52ea68c25b718913cda0fcb99f2/json-roa) in use, not published 
 -   Clojure client planned 
--   Formal specification (would be very hard for me)
+-   Formal specification ...
 *   ...
 
 

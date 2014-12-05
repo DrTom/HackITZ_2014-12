@@ -4,8 +4,9 @@
 
 # Hyper APIs and Linkded Data
 
-Max & Tom
+[Max][] & [Tom][] 
 {: .h2}
+
 
 HackITZ 2014-12 
 {: .h3}
@@ -16,14 +17,20 @@ HackITZ 2014-12
 
 <div class="panel panel-default"><div class="panel-body h3">
 
-1. [HTTP, REST, HyperAPIs](part1.html) (Tom)
+1.  [HTTP, REST, HyperAPIs][] (Tom)
 
-2. Linked Data (Max)
+2.  [Linked Data][] (Max)
 
-3. [HAL, JSON-ROA](part3.html) (Tom)
+3.  [HAL, JSON-ROA][] (Tom)
 
-4. Hands On (Everybody)
+4.  [Hands On](https://github.com/DrTom/HackITZ_2014-12/tree/master/demo) (Everybody)
 
+
+  [HAL, JSON-ROA]: part3.html
+  [HTTP, REST, HyperAPIs]: part1.html
+  [Linked Data]: https://gist.github.com/eins78/169ea9cf35d89ef309af
+  [Max]: https://github.com/eins78
+  [Tom]: https://github.com/DrTom/
 
 </div></div>
 

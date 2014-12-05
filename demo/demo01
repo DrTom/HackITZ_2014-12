@@ -14,7 +14,6 @@ end
 #
 # root_relation
 # root_relation.data
-# root_relation.methods
 # root_relation.get
 #
 # see https://github.com/json-roa/json-roa_ruby-client/blob/master/lib/json_roa/client/relation.rb
